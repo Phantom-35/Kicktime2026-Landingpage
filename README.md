@@ -1,29 +1,32 @@
-# ⚽ KickTime 2026 — Landing Page
+# KickTime 2026 – Info- & Supportseite
 
-Eine hochmoderne, konvertierende und extrem schnelle Landing Page für die **KickTime 2026** Web-App. Die Seite präsentiert das Produkt, erklärt das Feature-Set für die Fußball-WM 2026 und führt User nahtlos zur App-Registrierung sowie zum PWA-Installations-Flow.
+Statische Seite zu **KickTime 2026**, dem persönlichen Begleiter zur FIFA WM 2026:
+Rückblick auf die App, Installationsanleitung, häufige Fragen, Kontaktformular sowie
+Impressum und Datenschutzerklärung.
 
-![KickTime Preview](https://img.shields.io/badge/Status-Production_Ready-brightgreen)
-![Framework](https://img.shields.io/badge/Framework-React_19_%7C_Vite-blue)
-![Styling](https://img.shields.io/badge/Styling-Tailwind_CSS_v4-38bdf8)
-![Hosting](https://img.shields.io/badge/Hosted_on-Cloudflare_Pages-orange)
+## Aufbau
 
----
+- `index.html` – Startseite (App, Installieren, Fragen, Support)
+- `impressum.html`, `datenschutz.html` – Rechtstexte
+- `assets/css/style.css` – komplettes Styling (Dark/Light über `prefers-color-scheme`)
+- `assets/js/main.js` – Menü, Einblenden beim Scrollen, Kontaktformular, Weiterleitung alter Anker (`#impressum`, `#datenschutz`)
+- `assets/fonts/` – selbst gehostete Schriften (Space Grotesk, Inter), keine Google-Fonts-Anfragen
+- `_headers` – Sicherheits-Header für Cloudflare Pages (CSP)
 
-## 🎨 Hero & Feature Highlights
+Kein Build-Schritt, keine Bibliotheken, kein Tracking.
 
-* **Hero Section:** Dynamischer Pitch mit Direkt-CTA ("Jetzt Turnierplaner starten") und Live-Countdown zum Eröffnungsspiel.
-* **Interactive Preview:** Visueller Showcase der App-Features (Spoilerschutz, Perfect Matches, Zeitzonen-Umrechnung, Hall of Fame).
-* **Feature Grid:** Performante, animierte Cards mit Icon-Visualisierung für mobile Barrierefreiheit.
-* **Responsive & Mobile-First:** Perfekt optimierte Darstellung auf Smartphones, Tablets und Desktop-Screens mit flüssigen Animationen.
-* **Fast Load Times:** Minimaler Footprint, optimized Asset Loading und 100/100 Lighthouse Performance Index.
+## Lokal ansehen
 
----
+```sh
+python3 -m http.server 8080
+```
 
-## 🛠️ Tech Stack
+Dann `http://localhost:8080` öffnen.
 
-* **UI Framework:** React 19 / Vite
-* **Styling & UI Components:** Tailwind CSS v4, Lucide Icons, Framer Motion
-* **Analytics & Telemetry:** Supabase Edge Functions (datenschutzkonformes Tracking)
-* **Hosting & CDN:** Cloudflare Pages
+## Hinweise
 
----
+- Das Kontaktformular sendet an Formspree (`https://formspree.io/f/mpqnnabg`).
+- Die CSP in `_headers` erlaubt das kleine Inline-Skript im `<head>` per SHA-256-Hash.
+  Wird das Skript geändert, muss der Hash neu berechnet werden:
+  `printf '%s' '<inhalt>' | openssl dgst -sha256 -binary | base64`
+- Keine Inline-`style`-Attribute verwenden – die CSP blockiert sie.

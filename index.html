@@ -1,213 +1,318 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logo.ico" sizes="any">
-    <title>KickTime 2026</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Lucide Icons Alternative (FontAwesome via CDN for easy static loading or pure SVG/CSS, let's use a standard reliable icon font or pure CSS/SVGs inside. We can load standard Google Fonts and FontAwesome for premium look) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>KickTime 2026 – Dein WM-Begleiter · Hilfe &amp; Support</title>
+    <meta
+      name="description"
+      content="KickTime 2026: der persönliche Begleiter zur FIFA WM 2026 – Perfect Matches, Spoilerschutz, Live-Phasen und Erinnerungen. Rückblick, Anleitung und Support."
+    />
+    <meta name="theme-color" content="#060708" />
+    <link rel="icon" href="logo.ico" sizes="any" />
+    <link rel="icon" href="assets/img/logo-96.webp" type="image/webp" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preload" href="assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta property="og:title" content="KickTime 2026 – Dein WM-Begleiter" />
+    <meta property="og:description" content="104 Spiele, ein persönlicher Plan: Perfect Matches, Spoilerschutz und Erinnerungen zur WM 2026." />
+    <meta property="og:type" content="website" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
-    <!-- Header / Navigation -->
-    <header class="main-header">
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fa-solid fa-circle-nodes logo-icon"></i>
-                <span class="logo-text">Kick<span class="accent-text">Time</span> 2026</span>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#impressum">Impressum</a></li>
-                    <li><a href="#datenschutz">Datenschutz</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="top">
+      <div class="wrap top-in">
+        <a class="logo" href="./" aria-label="KickTime 2026 – Startseite">
+          <img src="assets/img/logo-96.webp" alt="" width="38" height="38" />
+          <span>Kick</span>Time&nbsp;26
+        </a>
+        <button class="burger" type="button" aria-controls="menu" aria-expanded="false">
+          <span class="sr-only">Menü</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16" /></svg>
+        </button>
+        <nav class="menu" id="menu" aria-label="Hauptnavigation">
+          <a href="#app">Die App</a>
+          <a href="#installieren">Installieren</a>
+          <a href="#fragen">Fragen</a>
+          <a href="#support">Support</a>
+          <a class="btn btn-lime btn-sm" href="https://app.kicktime2026.de">App öffnen</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container hero-container">
-            
-            <div class="hero-content">
-                <span class="badge">Bereit für die WM?</span>
-                <h1>Dein smarter Begleiter für die WM 2026</h1>
-                <p class="hero-subtitle">Erlebe die Weltmeisterschaft so dynamisch wie nie zuvor. Behalte den vollen Überblick über alle 72 Spiele, Live-Spielstände in Echtzeit und finde die besten Public Viewing Locations direkt in deiner Nähe.</p>
-                
-                <div class="app-features-minimal">
-                    <div class="feature-tag"><i class="fa-solid fa-bolt"></i> Live-Scores (30s Polling)</div>
-                    <div class="feature-tag"><i class="fa-solid fa-clock"></i> Automatische Zeitzonen</div>
-                    <div class="feature-tag"><i class="fa-solid fa-map-location-dot"></i> Echte Maps-Routen</div>
-                </div>
-
-                <div class="pwa-instructions">
-                    <p class="pwa-info-text">
-                        <i class="fa-solid fa-mobile-screen-button"></i> 
-                        <strong>KickTime 2026 läuft aktuell als Web-App!</strong><br>
-                        Du musst nichts herunterladen. Öffne die App einfach im Browser deines Handys und füge sie zu deinem Startbildschirm hinzu.
-                    </p>
-                    
-                    <div class="pwa-steps">
-                        <div class="pwa-step">
-                            <span class="step-icon"><i class="fa-brand fa-apple"></i></span>
-                            <p><strong>iOS (Safari):</strong> Tippe unten auf das <strong>Teilen-Symbol</strong> <i class="fa-solid fa-share-nodes"></i> und wähle <strong>"Zum Home-Bildschirm"</strong>.</p>
-                        </div>
-                        <div class="pwa-step">
-                            <span class="step-icon"><i class="fa-brands fa-android"></i></span>
-                            <p><strong>Android (Chrome):</strong> Tippe oben rechts auf die <strong>3 Punkte</strong> <i class="fa-solid fa-ellipsis-vertical"></i> und wähle <strong>"Zum Startbildschirm hinzufügen"</strong>.</p>
-                        </div>
-                    </div>
-
-                    <div class="launch-action">
-                        <a href="https://app.kicktime2026.de" target="_blank" class="btn btn-launch">
-                            <i class="fa-solid fa-rocket"></i> Web-App jetzt öffnen
-                        </a>
-                    </div>
-                </div>
+    <main id="inhalt">
+      <!-- ============ Hero ============ -->
+      <section class="hero">
+        <div class="wrap hero-in">
+          <div>
+            <span class="status"><b>Abgepfiffen</b> WM 2026 · Danke fürs Mitfiebern!</span>
+            <h1>104 Spiele.<br /><span class="hl">Dein</span> Turnier.</h1>
+            <p class="intro">
+              KickTime war dein persönlicher Begleiter durch die FIFA WM 2026 in den USA, Kanada und
+              Mexiko: nur die Spiele, die zu dir passen, mit deutscher Anstoßzeit, Sender und Wecker –
+              und ohne Spoiler. Die App bleibt als Rückblick online.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-lime" href="https://app.kicktime2026.de">
+                Zur App
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+              </a>
+              <a class="btn btn-line" href="#support">Support &amp; Kontakt</a>
             </div>
-            
-            <div class="hero-mockup">
-                <div class="phone-frame">
-                    <div class="phone-screen">
-                        <div class="phone-header">
-                            <span class="phone-time">17:08</span>
-                            <div class="phone-island"></div>
-                            <span class="phone-icons"><i class="fa-solid fa-signal"></i> 5G <i class="fa-solid fa-battery-three-quarters"></i></span>
-                        </div>
-                        <div class="phone-app-content">
-                            <div class="app-title-bar">
-                                <span class="app-logo"><i class="fa-solid fa-soccer-ball"></i> KickTime 2026</span>
-                                <span class="app-toggle"><i class="fa-solid fa-eye-slash"></i> <span class="toggle-switch"></span></span>
-                            </div>
-                            <div class="app-body">
-                                <h3 class="section-title">Public Viewing Guide</h3>
-                                <div class="mock-card">
-                                    <div class="card-row-top">
-                                        <span class="card-name">Stadion an der Isar</span>
-                                        <span class="distance-badge">4 km</span>
-                                    </div>
-                                    <p class="card-detail"><i class="fa-solid fa-map-pin"></i> Steinsdorfstraße 20, München</p>
-                                    <p class="card-detail"><i class="fa-solid fa-clock"></i> Klassische Sportsbar, bis 02:00</p>
-                                    <div class="card-match-info">
-                                        <span class="match-tv"><i class="fa-solid fa-tv"></i> Nächstes Perfect Match:</span>
-                                        <span class="match-teams">Deutschland vs. Curaçao (20:00)</span>
-                                    </div>
-                                    <button class="mock-btn"><i class="fa-solid fa-location-arrow"></i> Route planen</button>
-                                </div>
-                            </div>
-                            <div class="phone-navbar">
-                                <div class="nav-item"><i class="fa-solid fa-house"></i><span>Dashboard</span></div>
-                                <div class="nav-item"><i class="fa-solid fa-calendar-days"></i><span>Spiele</span></div>
-                                <div class="nav-item"><i class="fa-solid fa-list-ol"></i><span>Tabellen</span></div>
-                                <div class="nav-item active"><i class="fa-solid fa-location-dot"></i><span>Gastro</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
 
+          <div class="ticket up" role="img" aria-label="Stilisiertes Ticket zum WM-Finale am 19. Juli 2026 im MetLife Stadium, New York/New Jersey">
+            <div class="ticket-top"><span>FIFA World Cup 2026</span><span>Spiel 104</span></div>
+            <div class="ticket-body">
+              <div class="stage">Das<br />Finale</div>
+              <div class="ticket-meta">
+                <div><small>Datum</small><strong>So, 19.07.2026</strong></div>
+                <div><small>Anstoß</small><strong>21:00 Uhr MESZ</strong></div>
+                <div><small>Stadion</small><strong>MetLife Stadium</strong></div>
+                <div><small>Ort</small><strong>New York / New Jersey</strong></div>
+              </div>
+            </div>
+            <div class="ticket-cut"></div>
+            <div class="ticket-foot">
+              <span>Spoilerschutz: an</span>
+              <span class="barcode" aria-hidden="true"></span>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Support Section -->
-    <section id="support" class="support-section">
-        <div class="container container-narrow">
-            <div class="section-header">
-                <h2>Support & Kontakt</h2>
-                <p>Hast du Fragen, Feedback oder benötigst technische Unterstützung mit der KickTime 2026 App? Schreib uns direkt — unser Team meldet sich blitzschnell bei dir.</p>
+      <div class="wrap">
+        <div class="stats up">
+          <div class="stat"><b>104</b><span>Spiele</span></div>
+          <div class="stat"><b>48</b><span>Teams</span></div>
+          <div class="stat"><b>16</b><span>Spielorte</span></div>
+          <div class="stat"><b>3</b><span>Gastgeberländer</span></div>
+        </div>
+      </div>
+
+      <div class="ticker" aria-label="Spielorte der WM 2026">
+        <div class="ticker-row">
+          <span>Mexiko-Stadt</span><span>Toronto</span><span>Los Angeles</span><span>Vancouver</span><span>New York / New Jersey</span><span>Guadalajara</span><span>Boston</span><span>Dallas</span><span>Monterrey</span><span>Miami</span><span>Atlanta</span><span>Houston</span><span>Kansas City</span><span>Philadelphia</span><span>Seattle</span><span>San Francisco</span>
+          <span aria-hidden="true">Mexiko-Stadt</span><span aria-hidden="true">Toronto</span><span aria-hidden="true">Los Angeles</span><span aria-hidden="true">Vancouver</span><span aria-hidden="true">New York / New Jersey</span><span aria-hidden="true">Guadalajara</span><span aria-hidden="true">Boston</span><span aria-hidden="true">Dallas</span><span aria-hidden="true">Monterrey</span><span aria-hidden="true">Miami</span><span aria-hidden="true">Atlanta</span><span aria-hidden="true">Houston</span><span aria-hidden="true">Kansas City</span><span aria-hidden="true">Philadelphia</span><span aria-hidden="true">Seattle</span><span aria-hidden="true">San Francisco</span>
+        </div>
+      </div>
+
+      <!-- ============ Die App ============ -->
+      <section id="app">
+        <div class="wrap">
+          <div class="head up">
+            <div>
+              <span class="kicker">Die App</span>
+              <h2>Nicht alles schauen. <span class="hl">Das Richtige</span> schauen.</h2>
             </div>
-            
-            <form class="support-form" action="https://formspree.io/f/mpqnnabg" method="post">
-                <div class="form-group">
-                    <label for="name">Dein Name</label>
-                    <input type="text" id="name" placeholder="Max Mustermann" required>
+            <p>Statt 104 Spiele abzuarbeiten, hat KickTime für dich sortiert – passend zu deinen Teams und zu deinen freien Abenden.</p>
+          </div>
+
+          <div class="bento">
+            <article class="tile wide accent up">
+              <span class="num">01</span>
+              <h3>Perfect Matches</h3>
+              <p>Lieblingsteams und freie Zeiten angeben – das Dashboard zeigt genau die Spiele, die du nicht verpassen solltest. Mit Ampel statt Zahlensalat.</p>
+              <div class="lights" aria-hidden="true"><i class="g">Top-Spiel</i><i class="y">Interessant</i></div>
+              <span class="big" aria-hidden="true">✓</span>
+            </article>
+            <article class="tile up">
+              <span class="num">02</span>
+              <h3>Spoilerschutz</h3>
+              <p>Ergebnisse bleiben verdeckt, bis du sie aufdeckst – ideal für die Nachtspiele.</p>
+            </article>
+            <article class="tile up">
+              <span class="num">03</span>
+              <h3>Deutsche Uhrzeit</h3>
+              <p>Alle Anstoßzeiten automatisch in deiner Zeitzone – trotz sechs Zeitzonen vor Ort.</p>
+            </article>
+            <article class="tile up">
+              <span class="num">04</span>
+              <h3>Live-Phasen</h3>
+              <p>1. Halbzeit, Pause, Verlängerung, Elfmeterschießen – klar angezeigt statt Minutenraten.</p>
+            </article>
+            <article class="tile up">
+              <span class="num">05</span>
+              <h3>WM-Wecker</h3>
+              <p>Glocke antippen, und vor Anpfiff kommt eine Push-Nachricht. Oder direkt in den Kalender.</p>
+            </article>
+            <article class="tile half up">
+              <span class="num">06</span>
+              <h3>Turnier &amp; Kader</h3>
+              <p>Zwölf Gruppentabellen, die acht besten Dritten, der K.-o.-Baum und zu jeder Nation Trainer und kompletter Kader.</p>
+              <span class="big" aria-hidden="true">48</span>
+            </article>
+            <article class="tile half up">
+              <span class="num">07</span>
+              <h3>Tipps &amp; Hall of Fame</h3>
+              <p>Ergebnisse tippen und Punkte sammeln – und nach dem Finale der Weltmeister in Gold.</p>
+              <span class="big" aria-hidden="true">★</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Weiter zur EM 2028 ============ -->
+      <section class="flush">
+        <div class="wrap">
+          <div class="next up">
+            <div>
+              <span class="kicker">Nächster Anpfiff</span>
+              <h2>Weiter geht's: <span class="hl">KickTime 2028</span></h2>
+              <p>Zur UEFA EURO 2028 in Großbritannien und Irland gibt es KickTime komplett neu gebaut – noch übersichtlicher und mit Tipprunden für Familie und Freunde.</p>
+              <div class="hero-cta">
+                <a class="btn btn-line" href="https://app.kicktime2028.de">KickTime 2028 ansehen</a>
+              </div>
+            </div>
+            <ul>
+              <li>Tipprunden per Code – ganz ohne Anmeldung</li>
+              <li>Spieltag für Spieltag tippen, wie bei Kicktipp</li>
+              <li>Große Schrift und große Tippflächen</li>
+              <li>Erinnerungen 15 Minuten vor Anpfiff</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Installieren ============ -->
+      <section id="installieren" class="flush">
+        <div class="wrap">
+          <div class="head up">
+            <div>
+              <span class="kicker">Installieren</span>
+              <h2>Kein Store. <span class="hl">Ein Tipp.</span></h2>
+            </div>
+            <p>KickTime ist eine Web-App: im Browser öffnen, zum Startbildschirm hinzufügen – fertig.</p>
+          </div>
+          <div class="how">
+            <article class="up">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701" /></svg>
+                iPhone
+              </h3>
+              <ol>
+                <li><strong>app.kicktime2026.de</strong> in Safari öffnen.</li>
+                <li>Unten auf <strong>Teilen</strong> tippen.</li>
+                <li><strong>„Zum Home-Bildschirm“</strong> wählen.</li>
+              </ol>
+            </article>
+            <article class="up">
+              <h3>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48 19.44 6.3a.38.38 0 0 0-.66-.38l-1.86 3.22a11.5 11.5 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52ZM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Z" /></svg>
+                Android
+              </h3>
+              <ol>
+                <li><strong>app.kicktime2026.de</strong> in Chrome öffnen.</li>
+                <li>Oben rechts auf die <strong>drei Punkte</strong> tippen.</li>
+                <li><strong>„Zum Startbildschirm hinzufügen“</strong> wählen.</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Fragen ============ -->
+      <section id="fragen" class="flush">
+        <div class="wrap">
+          <div class="head up">
+            <div>
+              <span class="kicker">Häufige Fragen</span>
+              <h2>Kurz <span class="hl">gefragt</span>.</h2>
+            </div>
+            <p>Nicht dabei? Schreib mir einfach – unten gibt's das Formular.</p>
+          </div>
+          <div class="qa up">
+            <details>
+              <summary>Funktioniert KickTime 2026 noch?</summary>
+              <div class="a"><p>Ja. Die WM ist vorbei, die App bleibt aber als Rückblick online – mit allen Ergebnissen, Tabellen und deinen Tipps. Erinnerungen werden keine mehr verschickt.</p></div>
+            </details>
+            <details>
+              <summary>Kostet die App etwas, brauche ich ein Konto?</summary>
+              <div class="a"><p>Nein. KickTime ist kostenlos, werbefrei und kommt ohne Anmeldung aus. Deine Einstellungen bleiben auf deinem Gerät.</p></div>
+            </details>
+            <details>
+              <summary>Was bedeuten die Farben bei den Spielen?</summary>
+              <div class="a"><p>Grün heißt Top-Spiel – eins deiner Teams oder eine K.-o.-Runde. Gelb heißt interessant. Ein roter, pulsierender Rahmen zeigt, dass das Spiel gerade läuft.</p></div>
+            </details>
+            <details>
+              <summary>Werden meine Tipps und Einstellungen in die EM-App übernommen?</summary>
+              <div class="a"><p>Nein. KickTime 2028 ist eine eigene App. Teams und Zeiten richtest du dort in einer Minute neu ein.</p></div>
+            </details>
+            <details>
+              <summary>Wie lösche ich meine Daten?</summary>
+              <div class="a"><p>Deine Einstellungen liegen im Browser deines Geräts – löschst du die App bzw. die Website-Daten, sind sie weg. Erinnerungen schaltest du im Profil ab. Für alles Weitere genügt eine kurze Nachricht, siehe <a href="datenschutz.html">Datenschutz</a>.</p></div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Support ============ -->
+      <section id="support" class="flush">
+        <div class="wrap">
+          <div class="head up">
+            <div>
+              <span class="kicker">Support &amp; Kontakt</span>
+              <h2>Frage? <span class="hl">Schreib mir.</span></h2>
+            </div>
+            <p>Fragen, Fehler oder Lob – ich melde mich so schnell wie möglich, meist innerhalb eines Tages.</p>
+          </div>
+          <div class="help">
+            <div class="channels up">
+              <a class="channel" href="mailto:info.kicktime@gmx.de"><small>E-Mail</small><strong>info.kicktime@gmx.de</strong></a>
+              <a class="channel" href="https://app.kicktime2026.de"><small>In der App</small><strong>Profil → Feedback</strong></a>
+              <div class="channel"><small>Gut zu wissen</small><strong>Bei Fehlern bitte Gerät und Browser angeben.</strong></div>
+            </div>
+            <form class="form up" id="support-form" action="https://formspree.io/f/mpqnnabg" method="post">
+              <div class="two">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required maxlength="80" />
                 </div>
-                <div class="form-group">
-                    <label for="email">E-Mail-Adresse</label>
-                    <input type="email" id="email" placeholder="max@beispiel.de" required>
+                <div class="field">
+                  <label for="email">E-Mail</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required maxlength="120" />
                 </div>
-                <div class="form-group">
-                    <label for="message">Deine Nachricht</label>
-                    <textarea id="message" rows="5" placeholder="Wie können wir dir helfen?" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Nachricht senden</button>
+              </div>
+              <div class="field">
+                <label for="nachricht">Nachricht</label>
+                <textarea id="nachricht" name="message" required maxlength="4000"></textarea>
+              </div>
+              <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <input type="hidden" name="_subject" value="KickTime 2026 – Support-Anfrage" />
+              <label class="agree">
+                <input type="checkbox" required />
+                <span>Meine Angaben dürfen zur Beantwortung meiner Anfrage verarbeitet werden. Mehr in der <a href="datenschutz.html#kontakt">Datenschutzerklärung</a>.</span>
+              </label>
+              <button class="btn btn-lime" type="submit">Nachricht senden</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
             </form>
-            
-            <div class="support-fallback">
-                <p>Alternativ erreichst du uns auch direkt per E-Mail unter: <a href="mailto:info.kicktime@gmx.de" class="accent-link">info.kicktime@gmx.de</a></p>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Impressum Section -->
-    <section id="impressum" class="legal-section border-top">
-        <div class="container container-narrow">
-            <h2>Impressum</h2>
-            <div class="legal-content">
-                <h3>Angaben gemäß § 5 TMG</h3>
-                <p>Ben Griese<br>
-                Burghofweg 1<br>
-                53340 Meckenheim</p>
-
-                <h3>Kontakt</h3>
-                <p>Telefon: +49 173 2314900<br>
-                E-Mail: info.kicktime@gmx.de</p>
-
-                <h3>Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV</h3>
-                <p>Ben Griese<br>
-                Burghofweg 1<br>
-                53340 Meckenheim</p>
-
-                <h3>EU-Streitschlichtung</h3>
-                <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.<br>Unsere E-Mail-Adresse finden Sie oben im Impressum.</p>
-
-                <h3>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h3>
-                <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-            </div>
+    <footer class="foot">
+      <div class="wrap">
+        <div class="foot-in">
+          <a class="logo" href="./" aria-label="KickTime 2026 – Startseite">
+            <img src="assets/img/logo-96.webp" alt="" width="38" height="38" />
+            <span>Kick</span>Time&nbsp;26
+          </a>
+          <nav aria-label="Rechtliches">
+            <a href="https://app.kicktime2026.de">Zur App</a>
+            <a href="#support">Support</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+          </nav>
         </div>
-    </section>
-
-    <!-- Datenschutz Section -->
-    <section id="datenschutz" class="legal-section border-top">
-        <div class="container container-narrow">
-            <h2>Datenschutzerklärung</h2>
-            <div class="legal-content">
-                <h3>1. Datenschutz auf einen Blick</h3>
-                <h4>Allgemeine Hinweise</h4>
-                <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen oder unsere App nutzen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
-                
-                <h3>2. Allgemeine Hinweise und Pflichtinformationen</h3>
-                <h4>Datenschutz in der App</h4>
-                <p>Unsere App "KickTime 2026" verarbeitet Daten extrem sparsam. Zur Aktualisierung der Spielpläne und Live-Scores baut die App eine verschlüsselte Verbindung zu einer API-Schnittstelle auf. Hierbei wird kurzzeitig Ihre IP-Adresse übertragen, jedoch nicht dauerhaft protokolliert oder mit einer Person verknüpft.</p>
-                <h4>Verantwortlicher</h4>
-                <p>Der Verantwortliche für die Datenverarbeitung auf dieser Website und in der App ist:<br>
-                Ben Griese<br>
-                Burghofweg 1, 53340 Meckenheim<br>
-                E-Mail: info.kicktime@gmx.de</p>
-                
-                <h3>3. Datenerfassung auf dieser Website</h3>
-                <h4>Kontaktformular</h4>
-                <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
-                
-                <h3>4. Rechte der betroffenen Person</h3>
-                <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container footer-container">
-            <p>&copy; 2026 KickTime. Alle Rechte vorbehalten. Entworfen für sportliche Höchstleistungen.</p>
-        </div>
+        <p>© <span data-year>2026</span> Ben Griese · Privates, nicht-kommerzielles Fan-Projekt ohne Verbindung zur FIFA. „FIFA World Cup 26“ ist eine Marke der FIFA.</p>
+      </div>
     </footer>
 
-</body>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
